@@ -74,11 +74,16 @@ const ass = function(){
   for (let i = 0; i < names.length; i++){
     const nameslower = names[i].charAt().toLowerCase();
 
-    if (nameslower === 'j') {
-        console.log(`Good bye ${nameslower.toUpperCase()}${names[i].slice(1)}`);
-      } else {
-        console.log(`Hello ${nameslower.toUpperCase()}${names[i].slice(1)}`);
-      }
+    if (nameslower === 'j')
+    {
+        //console.log(`Good bye ${nameslower.toUpperCase()}${names[i].slice(1)}`);
+        byeSpeaker.speak(names[i]);
+    } 
+    else 
+    {
+        //console.log(`Hello ${nameslower.toUpperCase()}${names[i].slice(1)}`);
+        helloSpeaker.speak(names[i]);
+    }
   }
 }
 
